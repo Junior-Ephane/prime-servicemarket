@@ -616,7 +616,7 @@ body{
 
 .card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -626,7 +626,8 @@ body{
 }
 
 .card{
-    width: 325px;
+    width: 100%;
+    max-width: 325px;
     height: 500px;
     flex-direction: column;
     display: flex;
@@ -634,8 +635,9 @@ body{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
+    margin: 0 auto;
 }
+
 
 .card img{
     max-width: 325px;
@@ -690,189 +692,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOR RESPONSIVENESS TO DIFFERENT SCREEN SIZES */
-
-/* For molbile phones */
-@media (max-width: 768px){
-    .site-nav{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav-list{
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .hero-content{
-        position: static;
-        text-align: center;
-        padding: 20px;
-    }
-    .highlights-about{
-        grid-template-columns: 1fr;
-    }
-    footer{
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-col{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-}
-
 /* For tablets and large screens */
 @media (min-width: 769px) and (max-width: 1024px){
     .site-nav{
@@ -903,4 +722,30 @@ body{
     }
 }
 
-/* 
+
+
+
+/* 2. Small Devices (640px and up) */
+@media (min-width: 640px) {
+  /*  bigger phones  tablets */
+}
+
+/* 3. Medium Devices (768px and up - Tablets) */
+@media (min-width: 768px) {
+  .content { width: 80%; }
+
+.card-container{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+}
+
+/* 4. Large Devices (1024px and up - Laptops) */
+@media (min-width: 1024px) {
+  .content { width: 70%; display: flex; }
+}
+
+/* 5. Extra Large (1280px and up) */
+@media (min-width: 1280px) {
+  .content { max-width: 1200px; }
+}
