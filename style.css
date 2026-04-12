@@ -82,7 +82,7 @@
 
 .hero-content h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#2C3;
+    color:rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #145214;
 }
 
@@ -103,8 +103,8 @@
 
 .button-click{
     padding: 5px 15px;
-    margin: 15px;
-    border-radius: 5px;
+    margin: 20px;
+    border-radius: 10px;
     font-size: 13px;
     font-family: system-ui;
     text-transform: uppercase;
