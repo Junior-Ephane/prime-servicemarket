@@ -18,7 +18,7 @@ async function loadBusinesses() {
             cardHTML += '<p><strong>Contact:</strong> ' + business.contact + '</p>';
             cardHTML += '<p><strong>Service:</strong> ' + business.serviceType + '</p>';
             cardHTML += '<p class="price">Prices range from R' + business.rate + '</p>';
-            cardHTML += '<button class="btn">Message ' + business.businessName + ' now</button>';
+            cardHTML += '<button class="btn" onclick="window.open(\'https://wa.me/' + business.contact + '\', \'_blank\')">Message ' + business.businessName + ' now</button>';
             cardHTML += '</div>';
 
             card.innerHTML = cardHTML;
