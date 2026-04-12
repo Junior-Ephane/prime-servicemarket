@@ -102,9 +102,9 @@
 /* This is for the button in the hero section */
 
 .button-click{
-    padding: 5px 15px;
-    margin: 20px;
-    border-radius: 10px;
+    padding: 5px 15px; 
+    margin: 15px;
+    border-radius: 5px;
     font-size: 13px;
     font-family: system-ui;
     text-transform: uppercase;
@@ -163,8 +163,9 @@
     text-decoration-color: #033877;
     padding: 20px;
     margin: 30px;
-    font-size: 2rem;
+    font-size: 2rem; 
 }
+
 
 .card-unique:nth-child(1) .card-icon i{
     color: #ffcc00;
@@ -501,15 +502,20 @@ ul{
     text-transform: capitalize;
 }
 
-.footer-col h4::before{
+.footer-col h4::after{
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    height: 2px;
-    width: 60px;
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -12px;
+    height: 3px;
+    width: 50px;
     background-color: lightblue;
 }
+
+
+
 
 ul li:not(:last-child){
     margin-bottom: 10px;
