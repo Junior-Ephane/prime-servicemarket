@@ -53,19 +53,6 @@
     box-shadow: 0 0 10px;
 }
  
-/* This is for the sign-in button in the header */
-
-.button-signin{
-    background-color: #2C3;
-    color: #2C3E50;
-    border-radius: 7px;
-    padding: 5px 15px;
-    transition: 0.3s ease;
-}
-.button-signin:hover{
-    box-shadow: 0 0 10px ghostwhite;
-    cursor: pointer;
-}
 
 /* For the background cover which is the hero section */
 
@@ -688,7 +675,41 @@ body{
 }
 
 
+/* FOR RESPONSIVENESS TO DIFFERENT SCREEN SIZES */
 
+/* For molbile phones */
+@media (max-width: 768px){
+    .site-nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-list{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .hero-content{
+        position: static;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+    .highlights-about{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-col{
+        width: 100%;
+        text-align: center;
+    }
+}
 
 
 
@@ -727,26 +748,31 @@ body{
 
 
 /* 2. Small Devices (640px and up) */
-@media (min-width: 640px) {
-  /*  bigger phones  tablets */
+
+
+@media (min-width: 600px) {
+  .card-container{
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
 /* 3. Medium Devices (768px and up - Tablets) */
 @media (min-width: 768px) {
-  .content { width: 80%; }
-
-.card-container{
-    grid-template-columns: repeat(3, 1fr);
-}
-
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* 4. Large Devices (1024px and up - Laptops) */
 @media (min-width: 1024px) {
-  .content { width: 70%; display: flex; }
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* 5. Extra Large (1280px and up) */
 @media (min-width: 1280px) {
-  .content { max-width: 1200px; }
+    .content { 
+        max-width: 1200px; 
+    }
 }
