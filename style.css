@@ -103,8 +103,9 @@
 
 .button-click{
     padding: 5px 15px; 
-    margin: 15px;
+    margin-top: 15px;
     border-radius: 5px;
+    display: inline-block;
     font-size: 13px;
     font-family: system-ui;
     text-transform: uppercase;
@@ -113,8 +114,14 @@
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+    
 
 }
+
+
+
+
+
 .button-click:hover{
     box-shadow: 0 0 10px white;
     transform: scale(1.1);
@@ -680,6 +687,14 @@ body{
     transition: 0.3s ease;
 }
 
+.why h2{
+    text-align: center;
+    text-underline-offset: 8px;
+    text-decoration-color: #033877;
+    padding: 20px;
+    margin: 30px;
+    font-size: 2rem; 
+}
 
 /* FOR RESPONSIVENESS TO DIFFERENT SCREEN SIZES */
 
