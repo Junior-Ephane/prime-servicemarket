@@ -102,10 +102,9 @@
 /* This is for the button in the hero section */
 
 .button-click{
-    padding: 5px 15px; 
-    margin-top: 15px;
+    padding: 5px 15px;
+    margin: 15px;
     border-radius: 5px;
-    display: inline-block;
     font-size: 13px;
     font-family: system-ui;
     text-transform: uppercase;
