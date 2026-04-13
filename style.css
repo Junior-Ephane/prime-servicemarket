@@ -724,7 +724,10 @@ body{
     footer{
         flex-direction: column;
         align-items: center;
+        padding: 15px 5%;
     }
+
+
     .footer-col{
         width: 100%;
         text-align: center;
@@ -756,6 +759,7 @@ body{
     footer{
         flex-direction: column;
         align-items: center;
+        padding: 15px 5%;
     }
     .footer-col{
         width: 100%;
